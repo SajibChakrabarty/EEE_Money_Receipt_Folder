@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GB EEE Alumni Association (GBEEEAA) | Gono Bishwabidyalay</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+<div class="receipt-container">
+  <div class="header">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <div class="title">MONEY RECEIPT</div>
+    <div class="org-info">
+      <strong>GB EEE Alumni Association (GBEEEAA)</strong><br>
+      Dept. of Electrical & Electronic Engineering<br>
+      Gono Bishwabidyalay
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div>
+      <label>Receipt No:</label>
+      <input type="text" id="receiptNo">
+    </div>
+    <div>
+      <label>Date:</label>
+      <input type="date" id="date">
+    </div>
+  </div>
+
+  <label>Received From (Name):</label>
+  <input type="text" id="name">
+
+  <div class="form-row">
+    <div>
+      <label>Session / Batch:</label>
+      <input type="text" id="batch">
+    </div>
+    <div>
+      <label>Contact Number:</label>
+      <input type="text" id="contact">
+    </div>
+  </div>
+
+  <label>Amount (in BDT):</label>
+  <input type="text" id="amount">
+
+  <label>In Words:</label>
+  <input type="text" id="inWords">
+
+  <label>Purpose of Payment:</label>
+  <select id="purpose">
+    <option>Membership Fee</option>
+    <option>Donation</option>
+    <option>Event Fee</option>
+    <option>Others</option>
+  </select>
+  <input type="text" id="otherPurpose" placeholder="If Others, specify">
+
+  <label>Payment Method:</label>
+  <select id="paymentMethod">
+    <option>Cash</option>
+    <option>Bank Deposit</option>
+    <option>bKash</option>
+    <option>Nagad</option>
+    <option>Rocket</option>
+  </select>
+
+  <label>Transaction ID / Reference No:</label>
+  <input type="text" id="transactionId">
+
+  <label>Payment Date:</label>
+  <input type="date" id="paymentDate">
+
+  <div class="form-row">
+    <div>
+      <label>Received By:</label>
+      <input type="text" id="receiver">
+    </div>
+    <div>
+      <label>Designation:</label>
+      <input type="text" id="designation">
+    </div>
+  </div>
+
+  <label>Official Seal (Optional):</label>
+  <input type="text" id="seal">
+
+  <div style="text-align:center; margin-top: 20px">
+    <button onclick="generatePDF()">Download PDF</button>
+  </div>
+  Design By <b>★Sajib Chakrabarty★</b>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
