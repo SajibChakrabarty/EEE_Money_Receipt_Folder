@@ -18,7 +18,7 @@ async function generatePDF() {
 
   doc.setFontSize(16);
   doc.setTextColor(213, 83, 79);
-  doc.text("EEE ALUMNI ASSOCIATION", 50, 18);
+  doc.text("GB EEE ALUMNI ASSOCIATION (GBEEEAA)", 50, 18);
   doc.setFontSize(12);
   doc.setTextColor(0, 0, 0);
   doc.text("Department of Electrical & Electronic Engineering", 50, 26);
